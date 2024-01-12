@@ -32,14 +32,14 @@ function createBoard() {
 }
 
 function startGame() {
-    let squares = document.querySelectorAll('.grid div');
+    let squares = document.querySelectorAll(".grid div");
     randomApple(squares);
-    // make apples give points and add length
+    //random apple
     direction = 1;
     scoreDisplay.innerHTML = score;
     intervalTime = 1000;
     currentSnake = [2, 1, 0];
     currentIndex = 0;
-    currentSnake.forEach((index) => squares[index].classList.add('snake'));
+    currentSnake.forEach((index) => squares[index].classList.add("snake"));
     interval = setInterval(moveOutcome, intervalTime);
-}
+  }
